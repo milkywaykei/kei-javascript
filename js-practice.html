@@ -28,17 +28,40 @@
 
         console.log("Working with Strings");
 
-        let firstName = 'Kei'
-        let middleName = ''
-        let lastName = 'Hsu'
+        let firstName = 'Robert'
+        let middleName = '"Beto"'
+        let lastName = 'O\'Rourke'
 
         let name = firstName + " " + middleName + " " + lastName;
         console.log(name);
+
+        // strings on my own
 
         console.log("Strings on my own");
 
         let greeting = "My name is " + name;
         console.log(greeting);
+
+        console.log("Using functions:")
+
+        // function to make square numbers
+        function makeSquare(theNumb) {
+            let squared = theNumb * theNumb;
+            return squared;
+        }
+
+        let try01 = makeSquare(3);
+        console.log(try01);
+
+        // Functions on my own
+        function makeName(theName) {
+            let name = firstName + ' ' + middleName + ' ' + lastName;
+            return name
+        }
+
+        console.log(makeName('Kei Hsu'))
+        console.log(makeName("Ezra James Meyer"))
+        console.log(makeName("Robert \"Beto\" O'Rourke"))
 
     </script>
 </body>
