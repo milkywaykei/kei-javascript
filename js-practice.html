@@ -28,9 +28,9 @@
 
         console.log("Working with Strings");
 
-        let firstName = 'Robert'
-        let middleName = '"Beto"'
-        let lastName = 'O\'Rourke'
+        let firstName = 'Kei'
+        let middleName = ''
+        let lastName = 'Hsu'
 
         let name = firstName + " " + middleName + " " + lastName;
         console.log(name);
@@ -54,14 +54,43 @@
         console.log(try01);
 
         // Functions on my own
-        function makeName(theName) {
+        function makeName(firstName, middleName, lastName) {
             let name = firstName + ' ' + middleName + ' ' + lastName;
-            return name
+            return name;
         }
 
-        console.log(makeName('Kei Hsu'))
-        console.log(makeName("Ezra James Meyer"))
-        console.log(makeName("Robert \"Beto\" O'Rourke"))
+        console.log(makeName('Kei', '', 'Hsu'));
+        console.log(makeName("Ezra", "James", "Meyer"));
+        console.log(makeName("Robert", "\"Beto\"", "O'Rourke"));
+
+        console.log("Making a better name function:");
+
+        function makeBetterName(firstName, middleName, lastName) {
+            if (middleName.length === 1) {
+            middleName = middleName + ".";
+         }
+            let fullName = firstName + " " + middleName + " " + lastName;
+            return fullName;
+        }
+
+        console.log(makeBetterName("Joan", "Marie", "Larkin"));
+        console.log(makeBetterName("John", "F", "Kennedy"));
+        console.log(makeBetterName("James", "M", "Cornejo"))
+
+        console.log("scoreCompare function");
+         function scoreCompare(home, away) {
+                if (home > away) {
+                return "Home team wins!";
+            } else if (home === away) {
+                return "It was a tie"
+            } else {
+                return "Away team wins :("
+            }
+         }
+        console.log(scoreCompare(5,3));
+        console.log(scoreCompare(3,5));
+        console.log(scoreCompare(3,3))
+
 
     </script>
 </body>
